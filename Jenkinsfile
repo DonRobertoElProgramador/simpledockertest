@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from SCM
-                git 'https://github.com/DonRobertoElProgramador/simpledockertest.git'
+                git branch: 'main', url: 'https://github.com/DonRobertoElProgramador/simpledockertest.git'
             }
         }
 
