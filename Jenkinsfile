@@ -32,7 +32,7 @@ pipeline {
         always {
             script {
                 // Clean up dangling images
-                sh 'docker image prune -f'
+                sh 'docker ps -a'
             }
         }
     }
