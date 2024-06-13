@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Run the Docker container
-                    sh 'docker run --rm simple-echo-container'
+                    sh 'docker run -d simple-echo-container'
                 }
             }
         }
